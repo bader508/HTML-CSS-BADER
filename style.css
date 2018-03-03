@@ -1,0 +1,135 @@
+/*
+#43948e
+#594b3a
+#666666
+#999999
+#dddddd
+*/
+
+
+body{
+    color: #594b3a;
+    width: 60%;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    font-size: 120%;
+}
+
+a{
+    color: #43948e;
+}
+
+h1,li,blockquote{
+    font-family: 'Times New Roman', serif;
+}
+
+h1,h3,h4{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+h1{
+    padding: 15px 0;
+    border-top: 1px solid #999;
+    border-bottom: 2px solid #999;
+}
+
+h3{
+    padding-top: 40px;
+}
+
+h3 span {
+    font-size: 10px;
+    font-weight: lighter;
+    
+}
+
+nav{
+    color: #43948e;
+}
+
+li{
+    text-transform: uppercase;
+    font-size: 130%;
+    padding: 20px 0;
+}
+
+figure, blockquote{
+    margin: 0;
+    padding: 0;
+}
+
+blockquote{
+    background-color: #ddd;
+    padding: 30px;
+    font-style: italic;
+    font-size: 170%
+}
+
+#author{
+    font-size: 70%;
+    text-align: right;
+}
+
+p{
+    text-align: left;
+    
+}
+
+figure{
+    display: flex;
+    align-items: center;
+}
+figure img{
+    margin-right: 20px;
+    width: 50%;
+}
+
+
+table {
+    width: 100%;
+    padding: 20px;
+    border-collapse: collapse;
+    text-align: right;
+}
+
+td:first-child,
+th:first-child{
+    text-align: left;
+}
+
+th {
+    background-color: #666;
+    color: white;
+}
+
+th, td {
+    padding: 15px;
+    font-size: 16px;
+}
+
+td {
+   border-right: 0.4px solid #999;
+}
+
+td:last-child {
+    border-right: none;
+}
+
+
+tr:nth-child(even) {
+    border: 2px dashed #999;
+    background-color: #ddd;
+    border-left: none;
+    border-right: none;
+}
+
+hr{
+    margin-top: 50px;
+    color: #999;
+}
+footer p{
+    text-align: center;
+    font-size: 14px;
+}
