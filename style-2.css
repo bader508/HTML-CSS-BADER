@@ -1,0 +1,233 @@
+    /* 
+- img: https://www.trilux.com/fileadmin/Content/DE/Images/Anwendungen/Office/ATHENIK_Office_Slider.jpg
+- text from: https://en.wikipedia.org/wiki/Web_development
+- font: Arial
+- color: #000, #818181
+- you can use any logotype picture that you want
+- find us: insert a real google maps widget (https://developers.google.com/maps/documentation/javascript/adding-a-google-map) - if you don’t know how to do that - add a screenshot
+- use github issues for the feedback
+- use the sketch as a guide for the mobile layout - keep the design used on the desktop, only adjust the layout
+
+
+
+*/
+    /* ----------------------------------------------- */
+    /* BASIC SETUP */
+    /* ----------------------------------------------- */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html,
+    body {
+        background-color: #fff;
+        font-family: 'Arial', sans-serif;
+    }
+    /* ----------------------------------------------- */
+    /* REUSABLE COMPONENTS */
+    /* ----------------------------------------------- */
+    
+    .row {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    
+    .col-7 {
+        border-width: 20cm;
+    }
+    
+    section {
+        padding-top: 30px;
+    }
+    /* ----- HEADINGS ----- */
+    
+    h1,
+    h2,
+    h3,
+    h4 {
+        text-transform: uppercase;
+        color: #000;
+    }
+    
+    h1 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    
+    h2 {
+        margin-bottom: 25px;
+    }
+    
+    h4 {
+        margin-bottom: 35px;
+    }
+    
+    h3 {
+        margin-bottom: 20px;
+    }
+    
+    p {
+        color: #494747;
+        line-height: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    /* ----------------------------------------------- */
+    /* HEADER */
+    /* ----------------------------------------------- */
+    
+    header {
+        background-image: url(https://www.trilux.com/fileadmin/Content/DE/Images/Anwendungen/Office/ATHENIK_Office_Slider.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+    
+    .header {
+        padding: 3% 10%;
+        background-color: #eee;
+    }
+    
+    .nav {
+        padding: 2% 10% 3% 10%;
+        background-color: #fff;
+    }
+    
+    .nav ul,
+    .nav a,
+    .nav li {
+        float: left;
+        text-decoration: none;
+        list-style: none;
+        background-color: #fff;
+    }
+    
+    .nav a {
+        color: rgb(44, 44, 44);
+        font-size: 15px;
+        padding-right: 30px;
+        font-weight: bold;
+    }
+    
+    .nav .active {
+        color: #aaa;
+    }
+    /* ----- LOGOS ----- */
+    
+    .logos img {
+        width: 125px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+    }
+    /* ----------------------------------------------- */
+    /* FOOTER */
+    /* ----------------------------------------------- */
+    
+    footer {
+        background-color: #63c;
+        padding: 40px 15px;
+    }
+    
+    footer p,
+    footer a,
+    footer li,
+    footer h3 {
+        list-style: none;
+        text-decoration: none;
+        color: #ffffff;
+    }
+    
+    footer p {
+        font-size: 110%;
+    }
+    
+    footer a {
+        font-size: 130%;
+    }
+    
+    footer ul li {
+        padding-bottom: 40px;
+    }
+    /* ----- MAP ----- */
+    
+    #map {
+        height: 250px;
+        width: 100%;
+    }
+    /* ----------------------------------------------- */
+    /* Media Queries */
+    /* ----------------------------------------------- */
+    
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    [class*="col-"] {
+        float: left;
+        padding: 15px;
+    }
+    /* For mobile phones: */
+    
+    [class*="col-"] {
+        width: 100%;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        /* For mobile: */
+        .nav {
+            padding: 5% 0 5% 0;
+        }
+        .nav ul,
+        .nav a,
+        .nav li {
+            float: none;
+            text-align: center;
+            margin-left: 8%;
+            margin-bottom: 10px;
+        }
+    }
+    
+    @media only screen and (min-width: 768px) {
+        /* For desktop: */
+        .col-1 {
+            width: 8.33%;
+        }
+        .col-2 {
+            width: 16.66%;
+        }
+        .col-3 {
+            width: 25%;
+        }
+        .col-4 {
+            width: 33.33%;
+        }
+        .col-5 {
+            width: 41.66%;
+        }
+        .col-6 {
+            width: 50%;
+        }
+        .col-7 {
+            width: 58.33%;
+        }
+        .col-8 {
+            width: 66.66%;
+        }
+        .col-9 {
+            width: 75%;
+        }
+        .col-10 {
+            width: 83.33%;
+        }
+        .col-11 {
+            width: 91.66%;
+        }
+        .col-12 {
+            width: 100%;
+        }
+    }
